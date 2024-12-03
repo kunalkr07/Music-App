@@ -6,7 +6,7 @@ import {
   faPlay,
   faPause
 } from "@fortawesome/free-solid-svg-icons";
-import "@fortawesome/free-solid-svg-icons"
+
 
 export default function Hero() {
   const [song, Setsong] = useState([]);
