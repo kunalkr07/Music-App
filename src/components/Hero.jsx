@@ -4,8 +4,7 @@ import {
   faHeadphones,
   faSearch,
   faPlay,
-  faPause,
-  faBars,
+  faPause
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
