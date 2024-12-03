@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Header/>
     <Navbar />
     <Hero />
     <Footer />
