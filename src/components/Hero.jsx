@@ -6,6 +6,7 @@ import {
   faPlay,
   faPause
 } from "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/free-solid-svg-icons"
 
 export default function Hero() {
   const [song, Setsong] = useState([]);
@@ -177,7 +178,6 @@ export default function Hero() {
                   />
                   <span className="card-title">{song.title}</span>
                   <p className="card-artist">Artist: {song.artist.name}</p>
-                 
                 </div>
               </div>
             ))
@@ -195,38 +195,33 @@ export default function Hero() {
               </div>
             </div>
           )}
-
-
         </div>
         <div className="player-container">
           <div className="player">
             <p> {songTitle}</p>
-          <div className="progress-section">
-          <p>{formatTime(currentTime)}</p>
-            <input
-              type="range"
-              min="0"
-              max={duration || 0}
-              value={currentTime}
-              onChange={handleSliderChange}
-            />
-            <p>{formatTime(duration)}</p>
-          </div>
-           
-           <div className="player-btn">
-           <button>
-              <FontAwesomeIcon
-                icon={isPlaying ? faPause : faPlay}
-                onClick={() => togglePlayPause(previewUrl, id)}
+            <div className="progress-section">
+              <p>{formatTime(currentTime)}</p>
+              <input
+                type="range"
+                min="0"
+                max={duration || 0}
+                value={currentTime}
+                onChange={handleSliderChange}
               />
-            </button>
-           </div>
+              <p>{formatTime(duration)}</p>
+            </div>
+
+            <div className="player-btn">
+              <button>
+                <FontAwesomeIcon
+                  icon={isPlaying ? faPause : faPlay}
+                  onClick={() => togglePlayPause(previewUrl, id)}
+                />
+              </button>
+            </div>
           </div>
         </div>
-
-       
       </div>
-      
     </div>
   );
 }
