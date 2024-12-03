@@ -177,14 +177,7 @@ export default function Hero() {
                   />
                   <span className="card-title">{song.title}</span>
                   <p className="card-artist">Artist: {song.artist.name}</p>
-                  {/* <button
-                    className="play-song"
-                    onClick={() => togglePlayPause(song.preview)}
-                  > */}
-                  {/* <FontAwesomeIcon
-                    icon={isPlaying && audioRef.current.src === song.preview ? faPause : faPlay}
-                    /> */}
-                  {/* </button> */}
+                 
                 </div>
               </div>
             ))
