@@ -1,7 +1,6 @@
-import React, { useState,useRef } from "react";
+import React, { useState } from "react";
 import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faOm, faUser, faXmark } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Navbar() {
   const [password, setPassword] = useState("");
@@ -40,15 +39,15 @@ export default function Navbar() {
     <div>
       {/* navbar starts here */}
       <nav>
-        
-        <FontAwesomeIcon icon={faOm} className="bars" onClick={toggleSidebar}/>
+      <i className="fa-solid fa-om bars" onClick={toggleSidebar}/>
         <div className="logo">
           <span>𝕮𝖆𝖙𝖊𝖗𝖕𝖎𝖑𝖑𝖊𝖗 𝕸𝖚𝖘𝖎𝖈</span>
         </div>
 
         <div className="login">
           <button className="login-btn" onClick={toggleBtn}>
-           <FontAwesomeIcon icon={faUser}/>
+         <i className="fa-solid fa-user" />
+
           </button>
         </div>
 
@@ -57,11 +56,8 @@ export default function Navbar() {
 
 <div className="login-container">
 <div className="login-box">
-  <FontAwesomeIcon
-    icon={faXmark}
-    className="cross-mark"
-    onClick={closeBtn}
-  />
+<i className="fa-solid fa-xmark cross-mark"  onClick={closeBtn}/>
+
   <h2>Welcome to My Music App</h2>
   <p>Login to enjoy your favorite tunes!</p>
   {/* login input */}
