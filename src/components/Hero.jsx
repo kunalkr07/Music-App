@@ -1,12 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeadphones,
-  faSearch,
-  faPlay,
-  faPause
-} from "@fortawesome/free-solid-svg-icons";
-
 
 export default function Hero() {
   const [song, Setsong] = useState([]);
@@ -149,7 +141,8 @@ export default function Hero() {
       {/* Right Section */}
       <div className="right-section">
         <div className="search-bar">
-          <FontAwesomeIcon icon={faHeadphones} className="icon" />
+          <i className="fa-solid fa-headphones icon" />
+
           <input
             type="search"
             placeholder="Search music, tracks, albums"
@@ -157,7 +150,7 @@ export default function Hero() {
             value={search}
           />
           <button onClick={getSearch}>
-            <FontAwesomeIcon icon={faSearch} className="icon" />
+            <i className="fa-brands fa-searchengin icon" />
           </button>
         </div>
 
@@ -212,11 +205,8 @@ export default function Hero() {
             </div>
 
             <div className="player-btn">
-              <button>
-                <FontAwesomeIcon
-                  icon={isPlaying ? faPause : faPlay}
-                  onClick={() => togglePlayPause(previewUrl, id)}
-                />
+              <button onClick={() => togglePlayPause(previewUrl, id)}>
+                <i className={isPlaying ? "fas fa-pause" : "fas fa-play"}></i>
               </button>
             </div>
           </div>
