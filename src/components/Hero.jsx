@@ -185,6 +185,9 @@ export default function Hero() {
                 <span>I</span>
                 <span>N</span>
                 <span>G</span>
+                 <span>.</span>
+                 <span>.</span>
+                 <span>.</span>
               </div>
             </div>
           )}
