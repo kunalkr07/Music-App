@@ -283,6 +283,7 @@ nav > .bars {
 .player-container {
   width: 100%;
   color: #fff;
+  height:100px;
 }
 .player {
   width: 100%;
